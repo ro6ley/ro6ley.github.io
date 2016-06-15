@@ -215,8 +215,10 @@
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              <h5 class="black-text">Tag Cloud</h5>
+              
+              <div id='tag-cloud'></div>
+
             </div>
 
             <div class="col l4 offset-l2 s12">
@@ -283,6 +285,90 @@
           $(".button-collapse").sideNav();
         });
       </script>
+      <!-- Tag Cloud -->
+      <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+      <script src="assets/js/jquery.svg3dtagcloud.min.js"></script>
+      <script>
+
+            $( document ).ready( function() {
+
+                  var entries = [ 
+
+                      { label: 'Back to top', url: 'http://www.jqueryscript.net/tags.php?/Back%20to%20top/', target: '_top' },
+                      { label: 'Bootstrap', url: 'http://www.jqueryscript.net/tags.php?/Bootstrap/', target: '_top' },
+                      { label: 'Carousel', url: 'http://www.jqueryscript.net/tags.php?/carousel/', target: '_top' },
+                      { label: 'Countdown', url: 'http://www.jqueryscript.net/tags.php?/countdown/', target: '_top' },
+                      { label: 'Dropdown Menu', url: 'http://www.jqueryscript.net/tags.php?/Drop%20Down%20Menu/', target: '_top' },
+                      { label: 'CodePen', url: 'http://codepen.io/', target: '_top' },
+                      { label: 'three.js', url: 'http://threejs.org/', target: '_top' },
+                      { label: 'Form Validation', url: 'http://www.jqueryscript.net/tags.php?/form%20validation/', target: '_top' },
+                      { label: 'JS Compress', url: 'http://jscompress.com/', target: '_top' },
+                      { label: 'TinyPNG', url: 'https://tinypng.com/', target: '_top' },
+                      { label: 'Can I Use', url: 'http://caniuse.com/', target: '_top' },
+                      { label: 'URL shortener', url: 'https://goo.gl/', target: '_top' },
+                      { label: 'Grid Layout', url: 'http://www.jqueryscript.net/tags.php?/grid%20layout/', target: '_top' },
+                      { label: 'Twitter', url: 'https://twitter.com/NaiRobley', target: '_top' },
+                      { label: 'deviantART', url: 'http://nkunited.deviantart.com/', target: '_top' },
+                      { label: 'Gulp', url: 'http://gulpjs.com/', target: '_top' },
+                      { label: 'Browsersync', url: 'https://www.browsersync.io/', target: '_top' },
+                      { label: 'GitHub', url: 'https://github.com/', target: '_top' },
+                      { label: 'Shadertoy', url: 'https://www.shadertoy.com/', target: '_top' },
+                      { label: 'Tree View', url: 'http://www.jqueryscript.net/tags.php?/tree%20view/', target: '_top' },
+                      { label: 'jsPerf', url: 'http://jsperf.com/', target: '_top' },
+                      { label: 'Foundation', url: 'http://foundation.zurb.com/', target: '_top' },
+                      { label: 'CreateJS', url: 'http://createjs.com/', target: '_top' },
+                      { label: 'Velocity.js', url: 'http://julian.com/research/velocity/', target: '_top' },
+                      { label: 'TweenLite', url: 'https://greensock.com/docs/#/HTML5/GSAP/TweenLite/', target: '_top' },
+                      { label: 'jQuery', url: 'https://jquery.com/', target: '_top' },
+                      { label: 'Notification', url: 'http://www.jqueryscript.net/tags.php?/Notification/', target: '_top' },
+                      { label: 'Parallax', url: 'http://www.jqueryscript.net/tags.php?/parallax/', target: '_top' }
+
+                  ];
+
+                  var settings = {
+
+                      entries: entries,
+                      width: 480,
+                      height: 480,
+                      radius: '65%',
+                      radiusMin: 75,
+                      bgDraw: true,
+                      bgColor: 'transparent',
+                      opacityOver: 1.00,
+                      opacityOut: 0.05,
+                      opacitySpeed: 6,
+                      fov: 800,
+                      speed: 2,
+                      fontFamily: 'Oswald, Arial, sans-serif',
+                      fontSize: '15',
+                      fontColor: '#000',
+                      fontWeight: 'normal',//bold
+                      fontStyle: 'normal',//italic 
+                      fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                      fontToUpperCase: true
+
+                  };
+
+                  //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+                  $( '#tag-cloud' ).svg3DTagCloud( settings );
+
+          } );
+              
+          </script>
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>      
 
     </body>
 
