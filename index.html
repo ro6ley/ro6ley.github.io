@@ -1,329 +1,190 @@
-<!DOCTYPE html>
-<html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!-- Import Font Awesome -->
-      <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <title>..:: Robley ::..</title>
+<!--
+Copyright (c) 2011 Sam Phippen <samphippen@googlemail.com>
+ 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+ 
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+ 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+--> 
+<html> 
+<head> 
+<title>r0bl3y</title> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<style type="text/css"> 
+	body {
+		background-color: #000
+	}
+	#console {
+		font-family: courier, monospace;
+		color: #fff;
+		width:750px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:100px;
+		font-size:14px;
+	}
+	a {
+		color: #0bc;
+		text-decoration: none;
+	}
+	#a {
+		color: #0f0;
+	}
+	#c {
+		color: #0bc;
+	}
+	#b {
+		color: #ff0096;
+	}
+</style> 
+</head> 
+<body> 
+<script type="text/javascript"> 
+	var Typer={
+	text: null,
+	accessCountimer:null,
+	index:0, // current cursor position
+	speed:2, // speed of the Typer
+	file:"", //file, must be set
+	accessCount:0, //times alt is pressed for Access Granted
+	deniedCount:0, //times caps is pressed for Access Denied
+	init: function(){// inizialize Hacker Typer
+		accessCountimer=setInterval(function(){Typer.updLstChr();},500); // inizialize timer for blinking cursor
+		$.get(Typer.file,function(data){// get the text file
+			Typer.text=data;// save the textfile in Typer.text
+			Typer.text = Typer.text.slice(0, Typer.text.length-1);
+		});
+	},
+ 
+	content:function(){
+		return $("#console").html();// get console content
+	},
+ 
+	write:function(str){// append to console content
+		$("#console").append(str);
+		return false;
+	},
+ 
+	makeAccess:function(){//create Access Granted popUp      FIXME: popup is on top of the page and doesn't show is the page is scrolled
+		Typer.hidepop(); // hide all popups
+		Typer.accessCount=0; //reset count
+		var ddiv=$("<div id='gran'>").html(""); // create new blank div and id "gran"
+		ddiv.addClass("accessGranted"); // add class to the div
+		ddiv.html("<h1>ACCESS GRANTED</h1>"); // set content of div
+		$(document.body).prepend(ddiv); // prepend div to body
+		return false;
+	},
+	makeDenied:function(){//create Access Denied popUp      FIXME: popup is on top of the page and doesn't show is the page is scrolled
+		Typer.hidepop(); // hide all popups
+		Typer.deniedCount=0; //reset count
+		var ddiv=$("<div id='deni'>").html(""); // create new blank div and id "deni"
+		ddiv.addClass("accessDenied");// add class to the div
+		ddiv.html("<h1>ACCESS DENIED</h1>");// set content of div
+		$(document.body).prepend(ddiv);// prepend div to body
+		return false;
+	},
+ 
+	hidepop:function(){// remove all existing popups
+		$("#deni").remove();
+		$("#gran").remove();
+	},
+ 
+	addText:function(key){//Main function to add the code
+		if(key.keyCode==18){// key 18 = alt key
+			Typer.accessCount++; //increase counter 
+			if(Typer.accessCount>=3){// if it's presed 3 times
+				Typer.makeAccess(); // make access popup
+			}
+		}else if(key.keyCode==20){// key 20 = caps lock
+			Typer.deniedCount++; // increase counter
+			if(Typer.deniedCount>=3){ // if it's pressed 3 times
+				Typer.makeDenied(); // make denied popup
+			}
+		}else if(key.keyCode==27){ // key 27 = esc key
+			Typer.hidepop(); // hide all popups
+		}else if(Typer.text){ // otherway if text is loaded
+			var cont=Typer.content(); // get the console content
+			if(cont.substring(cont.length-1,cont.length)=="|") // if the last char is the blinking cursor
+				$("#console").html($("#console").html().substring(0,cont.length-1)); // remove it before adding the text
+			if(key.keyCode!=8){ // if key is not backspace
+				Typer.index+=Typer.speed;	// add to the index the speed
+			}else{
+				if(Typer.index>0) // else if index is not less than 0 
+					Typer.index-=Typer.speed;//	remove speed for deleting text
+			}
+			var text=Typer.text.substring(0,Typer.index)// parse the text for stripping html enities
+			var rtn= new RegExp("\n", "g"); // newline regex
+	
+			$("#console").html(text.replace(rtn,"<br/>"));// replace newline chars with br, tabs with 4 space and blanks with an html blank
+			window.scrollBy(0,50); // scroll to make sure bottom is always visible
+		}
+		if ( key.preventDefault && key.keyCode != 122 ) { // prevent F11(fullscreen) from being blocked
+			key.preventDefault()
+		};  
+		if(key.keyCode != 122){ // otherway prevent keys default behavior
+			key.returnValue = false;
+		}
+	},
+ 
+	updLstChr:function(){ // blinking cursor
+		var cont=this.content(); // get console 
+		if(cont.substring(cont.length-1,cont.length)=="|") // if last char is the cursor
+			$("#console").html($("#console").html().substring(0,cont.length-1)); // remove it
+		else
+			this.write("|"); // else write it
+	}
+}
+ 
+function replaceUrls(text) {
+	var http = text.indexOf("http://");
+	var space = text.indexOf(".me ", http);
+	if (space != -1) { 
+		var url = text.slice(http, space-1);
+		return text.replace(url, "<a href=\""  + url + "\">" + url + "</a>");
+	} else {
+	return text
+}
+}
+Typer.speed=3;
+Typer.file="r0bl3y.txt";
+Typer.init();
+ 
+var timer = setInterval("t();", 30);
+function t() {
+	Typer.addText({"keyCode": 123748});
+	if (Typer.index > Typer.text.length) {
+		clearInterval(timer);
+	}
+}
+ 
+</script> 
+<div id="console"></div> 
+<script type="text/javascript">
 
-    </head>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-610661-7']);
+  _gaq.push(['_trackPageview']);
 
-    <body style="background: url(assets/images/bg2.jpg);">
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-      <div class="navbar-fixed">
-        <nav class="black darken-3 z-depth-4" style=" opacity: 0.95; filter: alpha(opacity=95);">
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo yellow-text">Robley Gori</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons yellow-text">menu</i></a>
-
-            <ul class="right hide-on-med-and-down">
-              <li><a href="https://github.com/NaiRobley"><i class="fa fa-github fa-2x yellow-text"></i></a></li>
-              <li><a href="https://www.twitter.com/nairobley" target="_blank"><i class="fa fa-twitter fa-2x yellow-text"></i></a</li>
-              <li><a href="https://www.facebook.com/robleygori" target="_blank"><i class="fa fa-facebook fa-2x yellow-text"></i></a></li>
-              <li><a href="https://plus.google.com/+RobleyGori" target="_blank"><i class="fa fa-google fa-2x yellow-text"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fa fa-linkedin fa-2x yellow-text"></i></a></li>
-              <li><a href="http://www.pinterest.com/nairobley/" target="_blank"><i class="fa fa-pinterest fa-2x yellow-text"></i></a></li>
-            </ul>
-
-            <ul class="side-nav" id="mobile-demo" style="background: black; opacity: 0.8; filter: alpha(opacity=80);">
-              <li class="black-text"> <center> Get In Touch </center> </li>
-              <li><a href="https://github.com/NaiRobley" class="yellow-text" ><i class="fa fa-github fa-2x"></i> &nbsp; Github</a></li>
-              <li><a href="https://www.twitter.com/nairobley" class="yellow-text" target="_blank"><i class="fa fa-twitter fa-2x"></i> &nbsp; Twitter</a</li>
-              <li><a href="https://www.facebook.com/robleygori" class="yellow-text" target="_blank"><i class="fa fa-facebook fa-2x"></i> &nbsp; Facebook</a></li>
-              <li><a href="https://plus.google.com/+RobleyGori" class="yellow-text" target="_blank"><i class="fa fa-google fa-2x"></i> &nbsp; Google+</a></li>
-              <li><a href="#" class="yellow-text" target="_blank"><i class="fa fa-linkedin fa-2x yellow-text"></i> &nbsp; LinkedIn</a></li>
-              <li><a href="http://www.pinterest.com/nairobley/" class="yellow-text" target="_blank"><i class="fa fa-pinterest fa-2x"></i> &nbsp; Pinterest</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-      <div class="container z-depth-4" style="padding: 10px; background-color: black;">
-        <div class="row">
-        <!-- PASS -->
-        </div>
-
-        <div class="row">
-
-          <div class="col s12 m4 l4">
-            <img src="assets/images/bit_prof.jpg" alt="" class="circle user-img responsive-img">
-    			  <div class="block">
-    				  <h5 class="center yellow-text text-darken-2">Robley Gori</h5>
-    				  <p class="light center white-text">Your Friendly Neighborhood Techie</p>
-    			  </div>
-
-            <hr>
-            <div class="block white-text">
-              <h5 class="left-align"><i class="small material-icons yellow-text">account_box</i>
-              Haaave You Met Me?
-              </h5>
-              
-              <p>I am Robley of the House Gori, The First of my name, King of the Lambdas and the Decorators, Lord of the Tabs and Protector of the Whitespace.<br> <br>
-              I am fueled by fruits and coffee, mostly coffee. I play rubgy with my eyes, and fancy moving from restaurant to restaurant looking for typos on menus. <br>
-              I am a lethal torrent seeder and a banger of shit chatters.</p>
-
-            </div>
-
-            <hr>
-
-            <div class="block white-text">
-    				  <h5 class="left-align"><i class="small material-icons yellow-text">perm_phone_msg</i>
-    					Contact me
-    				  </h5>
-    					<p><i class="tiny material-icons yellow-text">pin_drop</i> In The Moment <br/><br/>
-    					<i class="tiny material-icons yellow-text">phone</i> +254 722 161224<br/><br/>
-    					<i class="tiny material-icons yellow-text">email</i> <a href="mailto:robleyadrian@gmail.com" class="yellow-text" target="_blank">robleyadrian@gmail.com</a><br/>
-    					<!-- <i class="tiny material-icons blue-text">link</i> <a href="" class="blue-text" target="_blank"><your website goes here></a> -->
-    					</p>
-    			  </div>
-
-            <hr>
-
-            <div class="block white-text">
-    				    <h5 class="left-align"><i class="small material-icons yellow-text">stars</i>Skills
-    				    </h5>
-    				  <h6>Python</h6>
-                <div class="progress" style="background: white;">
-                    <div class="determinate" style="width: 90%; background: yellow;"></div>
-                </div>                
-              <h6>Puns</h6>
-                <div class="progress" style="background: white;">
-                    <div class="determinate" style="width: 99%; background: yellow;"></div>
-                </div>       
-              <h6>Web Dev</h6>
-                <div class="progress" style="background: white;">
-                    <div class="determinate" style="width: 90%; background: yellow;"></div>
-                </div>       
-              <h6>Mobile Dev</h6>
-                <div class="progress" style="background: white;">
-                    <div class="determinate" style="width: 85%; background: yellow;"></div>
-                </div>       
-              <h6>Graphical Design</h6>
-                <div class="progress" style="background: white;">
-                    <div class="determinate" style="width: 90%; background: yellow;"></div>
-                </div>       
-    			  </div>
-
-          </div>
-
-          <div class="col s12 m8 l8">
-            <div class="row">
-              <h5 class="white-text"><i class="small material-icons yellow-text">work</i> &nbsp; What I Do </h5>
-            </div>
-            <!-- SLIDER -->
-            <div class="row">
-              <div class="slider" style="background: black;">
-                  <ul class="slides">
-                    <li>
-                      <img src="assets/images/1.jpg">
-                      <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                      </div>
-                    </li>
-                    <li>
-                      <img src="assets/images/2.jpg">
-                      <div class="caption left-align">
-                        <h3>Left Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                      </div>
-                    </li>
-                    <li>
-                      <img src="assets/images/3.jpg">
-                      <div class="caption right-align">
-                        <h3>Right Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                      </div>
-                    </li>
-                    <li>
-                      <img src="assets/images/4.jpg">
-                      <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="center-align">
-                    <button id="nextBtn" class="btn-large waves-effect waves-light yellow black-text z-depth-3">Next</button>
-                 </div>            
-         
-            </div>
-
-            <div class="row">
-
-                  <div class="col s12 m6">
-                  <div class="card hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="assets/images/bit_prof.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator black-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#" class="black-text">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal" style="opacity: 0.7; filter: alpha(opacity=70);" >
-                      <span class="card-title black-text">Card Title<i class="material-icons right">close</i></span>
-                      <p class="black-text">Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-
-                  <div class="col s12 m6">
-                  <div class="card hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="assets/images/bit_prof.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator black-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#" class="black-text">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal" style="opacity: 0.7; filter: alpha(opacity=70);" >
-                      <span class="card-title black-text">Card Title<i class="material-icons right">close</i></span>
-                      <p class="black-text">Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="block white-text">
-        			<h5><i class="small material-icons yellow-text">work</i> &nbsp; Internship</h5>
-        			<p class="helping-text"><i class="tiny material-icons yellow-text">place</i> The National Treasury &nbsp; <i class="tiny material-icons yellow-text">today</i> May - August 2016 </p>
-                    <p>Responsibilities: <br>
-                      - Troubleshooting computers <br>
-                      - Installation and Configuration of Software <br>
-                      - Preventive Maintenance <br>
-                    </p>
-                  </div>
-
-            </div>
-
-            <div class="row">
-                  <div class="col s12 m6">
-                  <div class="card hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="assets/images/bit_prof.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator black-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#" class="black-text">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal" style="opacity: 0.7; filter: alpha(opacity=70);" >
-                      <span class="card-title black-text">Card Title<i class="material-icons right">close</i></span>
-                      <p class="black-text">Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-
-                  <div class="col s12 m6">
-                  <div class="card hoverable">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="assets/images/bit_prof.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator black-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#" class="black-text">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal" style="opacity: 0.7; filter: alpha(opacity=70);" >
-                      <span class="card-title black-text">Card Title<i class="material-icons right">close</i></span>
-                      <p class="black-text">Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <footer class="page-footer black accent-3">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="yellow-text">Tag Cloud</h5>
-              
-              <div id='tag-cloud'></div>
-
-            </div>
-
-            <div class="col l4 offset-l2 s12">
-              <div class="row z-depth-4" style="background-color: white; padding: 10px;">
-                <h5>Wanna say something?</h5>
-                <form class="col s12">
-
-                  <div class="row">
-                    <div class="input-field col s6">
-                      <input id="first_name" type="text" class="validate">
-                      <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="last_name" type="text" class="validate">
-                      <label for="last_name">Last Name</label>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
-                      <label for="email">Email</label>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <form class="col s12">
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <textarea id="textarea1" class="materialize-textarea"></textarea>
-                          <label for="textarea1">Message</label>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-
-                  <div class="row">
-                    <center>
-                    <button class="btn waves-effect waves-light yellow black-text z-depth-3" type="submit" name="action">Submit
-                        <i class="material-icons right">send</i>
-                      </button>
-                    </center>
-                  </div>
-
-                </form>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="footer-copyright yellow-text" style="opacity: 0.95; filter: alpha(opacity=95);">
-          <div class="container">
-          &copy; 2016 Robley Gori
-          <a class="right yellow-text" href="#!"><i class="fa fa-paypal fa-1x yellow-text"></i> &nbsp; Buy coffee for a brother...aye!</a>
-          </div>
-        </div>
-      </footer>
-
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
-      <script src="assets/js/jquery.svg3dtagcloud.min.js"></script>
-      <script src="assets/js/magic.js"></script>      
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $(".button-collapse").sideNav();
-        });
-      </script>
-    </body>
-
-</html>
+</script>
+</body> 
+</html> 
