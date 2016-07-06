@@ -1,8 +1,6 @@
-<span id="a">r0bl3y@NaiRobley</span>:<span id="b">~</span><span id="c">$</span> cat r0bl3y.txt<br/><br/>
+<span id="a">r0bl3y@NaiRobley</span>:<span id="b">~</span><span id="c">#</span> cat r0bl3y.txt<br/><br/>
 Hi, I'm Robley aka NaiRobley(r0bl3y). Your Friendly Neigborhood Techie.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>I'm studying Information Technology at the Multimedia University of Kenya.  </p><!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj -->
-<p>I am fueled by fruits and coffee, mostly coffee. I play rubgy with my eyes, and fancy moving from restaurant to restaurant looking for typos on menus. 
-I am a lethal torrent seeder.</p><!- oqwipjefqwioefjwioqfjoiqwjfeioqwjefoi -->
+<p>I am a lethal torrent seeder who is fueled by coffee and fruits, mostly coffee. I play rubgy with my eyes, and enjoy moving from restaurant to restaurant looking for typos on menus.</p><!- oqwipjefqwioefjwioqfjoiqwjfeioqwjefoi -->
 <p>I fancy everything hack, code, chess, *nix, free think, movies, game, write and travel.</p><!-- owlsqweoifjqwoefijqwoeifjqwoefijwef -->
-If you would like to get in touch with me, whether it be for tech support, a business venture, or to just say hi<!-- slightdelayhere-->, feel free to send me an email.<!-- longlongcomment --> My email address is: <a href="mailto:robleyadrian@gmail.com">robleyadrian@gmail.com</a>
-<p> Contacts | Portfolio | Profile | More <a href="http://nairobley.github.io/more/">http://nairobley.github.io/more/</a>.</p>
-<p> Tweet me -- <a href="www.twitter.com/NaiRobley">@NaiRobley</a></p>
+If you would like to get in touch with me, whether it be for tech support, a business venture, or to just say hi<!-- slightdelayhere-->, feel free to tweet me:<!-- longlongcomment --> <a href="www.twitter.com/NaiRobley">@NaiRobley</a> or shoot an email my way: <a href="mailto:robleyadrian@gmail.com">robleyadrian@gmail.com</a>
+<p> Contacts | Portfolio | Profile | More <a href="http://nairobley.github.io/more/" target="_blank">http://nairobley.github.io/more/</a>.</p>
