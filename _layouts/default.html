@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
 
-    <!--[if lt IE 9]>
+    <!-- Icons Source: https://www.iconsdb.com/white-icons/ -->
+
+    [if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <![endif]
 
 {% seo %}
   </head>
@@ -22,12 +24,19 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
-        {% endif %}
-        {% if site.github.is_user_page %}
-          <!--  <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a> -->
-        {% endif %}
+
+        <!-- Icons go here -->
+        <div class="social-media-icons">
+          <img src="/assets/img/twitter-5-512.png" height="48" width="48">
+          <img src="/assets/img/github-11-512.png" height="48" width="48">
+          <img src="/assets/img/google-plus-5-512.png" height="48" width="48">
+          <img src="/assets/img/facebook-5-512.png" height="48" width="48">
+          <img src="/assets/img/instagram-5-512.png" height="48" width="48">
+          <img src="/assets/img/linkedin-5-512.png" height="48" width="48">
+          <img src="/assets/img/pinterest-5-512.png" height="48" width="48">
+          <img src="/assets/img/skype-5-512.png" height="48" width="48">
+        </div>
+
       </div>
     </header>
 
@@ -60,7 +69,18 @@
               <li>
                 <a href="{{ site.baseurl }}/projects">My Projects</a>
               </li>
-          </ul>          
+          </ul> 
+
+          Social:
+          <ul>
+            {% for social in site.data.socials %}
+              <li>
+                <a href="{{ social.href }}">
+                  {{ social.title }}
+                </a>
+              </li>
+            {% endfor %}
+            </ul>         
           
           Posts:
           <ul>
