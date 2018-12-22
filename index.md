@@ -5,7 +5,9 @@
 layout: default
 ---
 
-## Welcome to GitHub Pages
+## Welcome to my blog
+
+I ❤️ learning about new technologies, 📝 on my blog about interesting stuff, and I'm passionate about taking nice 📸  on my phone.
 
 You can use the [editor on GitHub](https://github.com/Manuel83/sample/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
