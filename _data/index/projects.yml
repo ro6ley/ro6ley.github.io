@@ -1,22 +1,32 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jalpc
-  i18n: jalpc
-  gh_user: jarrekk
-  repo: Jalpc
-  img: /static/assets/img/landing/jekyll.png
-  desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
+- name: Toa Sauti
+  i18n: toa_sauti
+  gh_user: ro6ley
+  repo: toasauti
+  url: http://nairobley.pythonanywhere.com
+  img: /static/assets/img/landing/toasauti.png
+  desc: A tool designed to enable the public to give valuable information to the authorities.
 
-- name: Python
-  i18n: cpython
-  gh_user: python
-  repo: cpython
+- name: PyCon Web Scraping Talk
+  i18n: pycon_web_scraping_talk
+  gh_user: ro6ley
+  repo: PyCONKE-WebScraping
   img: /static/assets/img/landing/python.png
-  desc: This project is other's project. I use another request to get repo's information.
+  desc: This is the demo project for the talk on Web Scraping using Python for PyCon KE held at USIU in October 2017.
 
-- name: Google
-  i18n: google
-  url: https://google.com
-  img: /static/assets/img/landing/google.png
-  desc: This is another project.
+- name: Midget
+  i18n: midget
+  gh_user: ro6ley
+  repo: midget
+  img: /static/assets/img/landing/midget.png
+  desc: This is a url shortening application built using Python (Django), Redis and JavaScript (VueJS + VueX).
+
+- name: CKAN Embed
+  i18n: ckan_embed
+  gh_user: ro6ley
+  repo: ckan-embed
+  img: /static/assets/img/landing/ckan.png
+  desc: This module supports embedding information dynamically from CKAN data portals into other websites. 
+        Currently only datasets (package) search results are supported.
