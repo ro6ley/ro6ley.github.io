@@ -3,6 +3,11 @@ layout: post
 title:  "Web Scraping with Python."
 date:   2018-10-9 10:00:00 +0300
 categories: tutorials
+desc: "Quick test on writing code snippets in a blog post"
+keywords: "Jalpc,Jekyll,gh-pages,website,blog,easy"
+categories: [Python]
+tags: [Python,We Scraping]
+icon: icon-python
 ---
 
 ## Introduction

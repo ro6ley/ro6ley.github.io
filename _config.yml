@@ -1,41 +1,63 @@
-title: Robley Gori 🐼
+# Welcome to Jekyll!
 
-name: Robley Gori 🐼
+# Website settings
+title: Robley
+description: My personal blog using Jekyll and Github pages.
+keywords: Robley,Gori,NaiRobley,ro6ley,github,gh-pages
+baseurl:  "" # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
+url: ""  # url should be 'http://<github_username>.github.io/homepage' as before
+# url: http://127.0.0.1:4000
+img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
-email: robleyadrian@gmail.com
+# author -- index page "about me" section
+author:  # change following line to your infomation.
+  name: Robley  # Be used at blog posts' author.
+  first_name: Robley  # Be used at index page about me section.
+  last_name: Gori  # Be used at index page about me section.
+  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  github_username: ro6ley  # Leave blank if you don't have now
+  linkedin_id: robleygori # Leave blank if you don't have now
+  facebook_username: ro6ley  # Leave blank if you don't have now
+  twitter_username: ro6ley  # Leave blank if you don't have now
+  email: robleyadrian@gmail.com  # Leave blank if you don't have now
+  cv: # An online CV can be printed as PDF, leave blank if you don't have now
+  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+  skill_icon1:
+    - name: icon-apache
+    - name: fa-linux
+  skill_icon2:
+    - name: fa-linux
+    - name: icon-apache
+  desc: Introduce myself will be here.  # Describe yourself.
 
-description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my blog.
+# comment
+disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
+  name: personal-blog-smiptjl2az
 
-baseurl: "" # the subpath of your site, e.g. /blog
+# analytics
+## google analytics
+ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+  id: UA-131195725-1
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+## google optimize
+go:
+  # id:
 
-twitter_username: ro6ley
-github_username:  ro6ley
-instagram_username: ro6ley
-linkedin_url: https://www.linkedin.com/in/robleygori
+## carousels
+index_carousel: on  # index page carousel switch
+blog_carousel: on  # blog page carousel switch
+
+# scss
+sass:
+  style: compressed
 
 # Build settings
+encoding: utf-8
+
+# other settings
+highlighter: rouge
 markdown: kramdown
-theme: jekyll-theme-architect
-plugins:
-  - jekyll-feed
-  
-# To enable Disqus commenting on posts
-disqus: personal-blog-smiptjl2az
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-# To activate Google Analytics web tracking
-google_analytics: UA-131195725-1
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
