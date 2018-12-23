@@ -1,29 +1,54 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Company A
-    i18n: company_a
+    detail: The National Treasury
+    i18n: safaricom_plc
   desc:
-    detail: I worked at Company A ...
+    detail: As an Information Technology intern at The National Treasury 
+            I was able to learn a lot about Information Technology as I 
+            assisted users resolve all their technological issues.
     i18n: company_a_desc
   date:
-    detail: Apr. 2016
-    i18n: company_a_date
+    detail: May. 2016
+    i18n: may_2018
   job:
-    detail: CTO
-    i18n: company_a_job
-  icon: fa-plus-square
+    detail: IT Intern
+    i18n: it_intern
+  icon: fa-laptop
 
 - name:
-    detail: Company B
-    i18n: company_b
+    detail: Andela
+    i18n: andela
   desc:
-    detail: I worked at Company B ...
+    detail: Andela provides companies with access to the top 1% of global tech talent. 
+            We identify high-potential developers on the African continent, shape them into 
+            world-class technical leaders, and pair them with companies as full-time, distributed 
+            team members. This allows Andela's partners, which range from startups to Fortune 500s, 
+            to accelerate their product roadmaps while minimizing time spent interviewing, on-boarding, 
+            and training new hires. Andela is backed by investors including Spark Capital, Omidyar Network, 
+            Susa Ventures, Steve Case, Founder Collective, Rothenberg Ventures, Learn Capital and more. 
+            Learn more about us at https://andela.com.
     i18n: company_b_desc
   date:
-    detail: Jun. 2015
-    i18n: company_b_date
+    detail: Jun. 2017
+    i18n: june_2017
   job:
-    detail: Full Stack Developer
-    i18n: company_b_job
-  icon: fa-plus-square
+    detail: Software Developer
+    i18n: software_developer
+  icon: fa-laptop
+
+- name:
+    detail: Safaricom PLC
+    i18n: safaricom_plc
+  desc:
+    detail: Part of the team implementing microservices & containerisation at 
+            the organisation using technologies such as Docker, 
+            Kubernetes and Java Spring among others.
+    i18n: company_a_desc
+  date:
+    detail: May. 2018
+    i18n: may_2018
+  job:
+    detail: Software Developer
+    i18n: software_developer
+  icon: fa-laptop
