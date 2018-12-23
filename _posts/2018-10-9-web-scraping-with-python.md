@@ -3,10 +3,10 @@ layout: post
 title:  "Web Scraping with Python."
 date:   2018-10-9 10:00:00 +0300
 categories: tutorials
-desc: "Quick test on writing code snippets in a blog post"
+desc: "An introduction to Web Scraping using Beautiful Soup and Python3"
 keywords: "Jalpc,Jekyll,gh-pages,website,blog,easy"
 categories: [Python]
-tags: [Python,We Scraping]
+tags: [Python,Web Scraping, Beautiful Soup]
 icon: icon-python
 ---
 
