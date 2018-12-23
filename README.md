@@ -29,4 +29,4 @@ Credits and more information [here](https://github.com/androiddevelop/jekyll-sea
 
 # Credits
 
-Many thanks to [Kun Jia](http://www.jarrekk.com) for the [Jalpc](https://github.com/jarrekk/Jalpc) theme and original work.
+Many thanks to [Kun Jia](http://www.jarrekk.com) for the [Jalpc](https://github.com/jarrekk/Jalpc) Jekyll theme.
