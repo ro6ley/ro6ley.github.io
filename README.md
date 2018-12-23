@@ -1,4 +1,4 @@
-This project was developed using Jekyll pages.
+This project was developed using [Jekyll](https://jekyllrb.com/docs/) pages.
 
 Clone the repo and run
 ```
