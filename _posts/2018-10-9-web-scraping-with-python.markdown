@@ -14,33 +14,18 @@ In the past, extracting information from a website meant copying the text availa
 
 ## Web Scraping Use Cases
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Web scraping is a powerful data collection tool when used efficiently. Some examples of areas where web scraping is employed are:
 
-```markdown
-Syntax highlighted code block
+- **Search:** Search engines use web scraping to index websites for them to appear in search results. The better the scraping techniques, the more accurate the results.
 
-# Header 1
-## Header 2
-### Header 3
+- **Trends:** In communication and media, web scraping can be used to track the latest trends and stories since there is not enough manpower to cover every new story or trend. With web scraping, you can achieve more in this field.
 
-- Bulleted
-- List
+- **Branding:** Web scraping also allows communications and marketing teams scrape information about their brand’s online presence. By scraping for reviews about your brand, you can be aware of what people think or feel about your company and tailor outreach and engagement strategies around that information.
 
-1. Numbered
-2. List
+- **Machine Learning:** Web scraping is extremely useful in mining data for building and training machine learning models.
 
-**Bold** and _Italic_ and `Code` text
+- **Finance:** It can be useful to scrape data that might affect movements in the stock market. While some online aggregators exist, building your own collection pool allows you to manage latency and ensure data is being correctly categorized or prioritized.
 
-[Link](url) and ![Image](src)
-```
+## Tools & Libraries
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Manuel83/sample/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
+There are several popular online libraries that provide programmers with the tools to quickly ramp up their own scraper. Some of my favorites include:
