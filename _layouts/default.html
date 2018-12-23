@@ -26,16 +26,20 @@
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
         <!-- Icons go here -->
-        <div class="social-media-icons">
-          <img src="/assets/img/twitter-5-512.png" height="48" width="48">
-          <img src="/assets/img/github-11-512.png" height="48" width="48">
-          <img src="/assets/img/google-plus-5-512.png" height="48" width="48">
-          <img src="/assets/img/facebook-5-512.png" height="48" width="48">
-          <img src="/assets/img/instagram-5-512.png" height="48" width="48">
-          <img src="/assets/img/linkedin-5-512.png" height="48" width="48">
-          <img src="/assets/img/pinterest-5-512.png" height="48" width="48">
-          <img src="/assets/img/skype-5-512.png" height="48" width="48">
-        </div>
+        <div class="social-media-icons" style="margin-top: 1rem;">
+            <a href="https://twitter.com/ro6ley" target="_blank"> <img src="/assets/img/twitter-5-512.png" height="40" width="40"> </a>
+            <a href="https://github.com/ro6ley" target="_blank"> <img src="/assets/img/github-11-512.png" height="40" width="40"> </a>
+            <!-- Add icon for email instead of Google+ -->
+            <a href="#" target="_blank"> <img src="/assets/img/google-plus-5-512.png" height="40" width="40"> </a>
+            <a href="https://instagram.com/ro6ley" target="_blank"> <img src="/assets/img/instagram-5-512.png" height="40" width="40"> </a>
+            <a href="https://linkedin.com/robleygori/" target="_blank"> <img src="/assets/img/linkedin-5-512.png" height="40" width="40"> </a>
+            <!-- <a href="https://facebook.com/ro6ley" target="_blank"> <img src="/assets/img/facebook-5-512.png" height="40" width="40"> </a> -->
+            <!-- <a href="https://pinterest.com/ro6ley" target="_blank"> <img src="/assets/img/pinterest-5-512.png" height="40" width="40"> </a> -->
+
+            <!-- Find out about skype details -->
+            <a href="https://www.twitter.com/ro6ley" target="_blank"> <img src="/assets/img/skype-5-512.png" height="40" width="40"> </a>
+            
+          </div>
 
       </div>
     </header>
@@ -62,14 +66,8 @@
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
           {% endif %}
 
-          <ul>
-              <li>
-                <a href="{{ site.baseurl }}/about">About</a>
-              </li>
-              <li>
-                <a href="{{ site.baseurl }}/projects">My Projects</a>
-              </li>
-          </ul> 
+          <a href="{{ site.baseurl }}/about"> <h3> About </h3></a>
+          <a href="{{ site.baseurl }}/projects"><h3> My Projects </h3></a>
           
           Posts:
           <ul>
