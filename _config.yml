@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: Robley
+title: Robley 🐼
 description: My personal blog using Jekyll and Github pages.
 keywords: Robley,Gori,NaiRobley,ro6ley,github,gh-pages
 baseurl:  "" # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
@@ -10,17 +10,17 @@ url: ""  # url should be 'http://<github_username>.github.io/homepage' as before
 img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
-author:  # change following line to your infomation.
-  name: Robley  # Be used at blog posts' author.
-  first_name: Robley  # Be used at index page about me section.
-  last_name: Gori  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+author: 
+  name: Robley  # To appear on blog posts as the author.
+  first_name: Robley  # To appear at index page about me section.
+  last_name: Gori  # To appear at index page about me section.
+  avatar: /static/assets/img/landing/avatar.jpg  # To appear at index page about me section.
   github_username: ro6ley
   linkedin_id: robleygori
   facebook_username:
   twitter_username: ro6ley 
   email: robleyadrian@gmail.com 
-  cv: # An online CV can be printed as PDF
+  cv: /cv/ # An online CV can be printed as PDF
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
     - name: icon-shell
@@ -32,13 +32,13 @@ author:  # change following line to your infomation.
     I enjoy being challenged and engaging with projects and technologies that require me to work outside my comfort-zone
     and knowledge set, as continuing to learn and overcome challenges fuel my growth. I am passionate about big data and analytics.
 
-# comment
-disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
+# comments feature using Disqus
+disqus:  # Shortname from Disqus settings page
   name: personal-blog-smiptjl2az
 
 # analytics
 ## google analytics
-ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+ga:  # Config from https://www.google.com/analytics/ 
   id: UA-131195725-1
 
 ## google optimize
