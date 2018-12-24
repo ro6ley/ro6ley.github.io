@@ -27,10 +27,9 @@ permalink: /blog/
                         </a>
                         <div class="vote-info">
                         {% if site.disqus %}
-                            <i class="fa fa-comments-o"> </i> <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ post.url }}"> </span>
+                            <i class="fa fa-comments-o"> </i> <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ post.url }}"> </span> &nbsp; - &nbsp; 
                         {% endif %}
-                            <i class="fa fa-clock-o"></i> <a>{{ post.date | date: "%-d %b %Y" }}</a>
-                            <i class="fa fa-user"></i> <a>{{ site.author.name }}</a>
+                            <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }} &nbsp; - &nbsp; <i class="fa fa-user"></i> {{ site.author.name }}
                         </div>
                     </div>
                     <div class="col-md-2 ">
