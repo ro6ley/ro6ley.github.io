@@ -6,17 +6,17 @@
 - name: Python
   href: /python/
 
-- name: Linux
-  href: /linux/
+- name: DevOps
+  href: /devops/
 
-- name: HTML
-  href: /html/
+- name: Java
+  href: /java/
 
-- name: Database
-  href: /database/
-
-- name: Mac
-  href: /mac/
+# - name: Linux
+#   href: /linux/
 
 - name: Photography
   href: /photography/
+
+- name: Medium
+  href: /medium/
