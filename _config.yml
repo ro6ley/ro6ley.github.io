@@ -20,8 +20,9 @@ author:
   facebook_username:
   twitter_username: ro6ley 
   email: robleyadrian@gmail.com 
-  cv: /cv/ # An online CV can be printed as PDF
-  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+  cv: /cv/ # Link to my CV
+  # skill icons are on avatar's left and right side. 
+  # Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
     - name: icon-shell
     - name: icon-python
@@ -32,12 +33,12 @@ author:
     I enjoy being challenged and engaging with projects and technologies that require me to work outside my comfort-zone
     and knowledge set, as continuing to learn and overcome challenges fuel my growth.
 
-# comments feature using Disqus
+# Comments feature using Disqus
 disqus:  # Shortname from Disqus settings page
   name: personal-blog-smiptjl2az
 
 # analytics
-## google analytics
+## Google Analytics
 ga:  # Config from https://www.google.com/analytics/ 
   id: UA-131195725-1
 
