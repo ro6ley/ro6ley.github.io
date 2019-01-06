@@ -1,19 +1,19 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: The National Treasury
+    detail: Safaricom PLC
     i18n: safaricom_plc
   desc:
-    detail: As an Information Technology intern at The National Treasury 
-            I was able to learn a lot about Information Technology as I 
-            assisted users resolve all their technological issues.
+    detail: Part of the team implementing microservices & containerisation at 
+            the organisation using technologies such as Docker, 
+            Kubernetes and Java Spring among others.
     i18n: company_a_desc
   date:
-    detail: May. 2016
+    detail: May. 2018
     i18n: may_2018
   job:
-    detail: IT Intern
-    i18n: it_intern
+    detail: Software Developer
+    i18n: software_developer
   icon: fa-laptop
 
 - name:
@@ -38,17 +38,17 @@
   icon: fa-laptop
 
 - name:
-    detail: Safaricom PLC
+    detail: The National Treasury
     i18n: safaricom_plc
   desc:
-    detail: Part of the team implementing microservices & containerisation at 
-            the organisation using technologies such as Docker, 
-            Kubernetes and Java Spring among others.
+    detail: As an Information Technology intern at The National Treasury 
+            I was able to learn a lot about Information Technology as I 
+            assisted users resolve all their technological issues.
     i18n: company_a_desc
   date:
-    detail: May. 2018
+    detail: May. 2016
     i18n: may_2018
   job:
-    detail: Software Developer
-    i18n: software_developer
+    detail: IT Intern
+    i18n: it_intern
   icon: fa-laptop
