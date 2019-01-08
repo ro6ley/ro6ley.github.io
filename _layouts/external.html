@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="0; url={{ page.link }}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+      
+        <meta content="{{ site.description }}" name="description">
+        <meta name="keywords" content="{{ site.keywords }}">
+        <meta name="author" content="{{ site.author.name }}">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="{{ "/static/assets/img/favicon.ico" | prepend: site.baseurl }}">
+    
+        <!-- Redirect to the blog on external site -->
+        <script type="text/javascript">
+            window.location.href = "{{ page.link }}"
+        </script>
+
+        <title>{{ page.title }}</title>
+    </head>
+
+    <body>
+        If you are not redirected automatically, follow this <a href='{{ page.link }}' target="_blank">link to my blog on Medium</a>.
+
+        {% include analytics.html %}
+    </body>
+
+</html>
+
+
