@@ -1,6 +1,7 @@
 [![Analytics](https://ga-beacon.appspot.com/UA-131195725-1/welcome-page)](https://github.com/ro6ley/ro6ley.github.io)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badge/)
+[![HitCount](http://hits.dwyl.io/ro6ley/ro6ley.github.io.svg)](http://hits.dwyl.io/ro6ley/ro6ley.github.io)
 
 # Personal Blog. 
 
