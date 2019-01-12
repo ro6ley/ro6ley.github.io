@@ -7,5 +7,5 @@ keywords: "web,web scraping,python,python3,beautifulsoup,bs4,github,website,blog
 categories: [Python]
 tags: [Python,Web Scraping, Beautiful Soup]
 icon: icon-python
-link: https://kite.com/blog/python/python-beautifulsoup-html-parser-web-scraping
+link: https://medium.com/kitepython/python-beautifulsoup-html-parser-web-scraping-3cbaeffdee26
 ---
