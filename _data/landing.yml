@@ -31,10 +31,10 @@
   page: blog/
   css: testimonials navy-section
 
-- id: github
-  i18n: nav.github
-  name: Github
-  tpl: github.html
+# - id: github
+#   i18n: nav.github
+#   name: Github
+#   tpl: github.html
   # css: project
 
 - id: links
