@@ -31,6 +31,12 @@
   page: blog/
   css: testimonials navy-section
 
+- id: github
+  i18n: nav.github
+  name: Github
+  tpl: github.html
+  # css: project
+
 - id: links
   i18n: nav.link
   name: Links
