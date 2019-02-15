@@ -25,7 +25,7 @@ permalink: /
             {% else %}
               <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
             {% endif %}
-              <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+              <span data-i18n="{{ section.i18n }}" style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace">{{ section.name }}</span>
             </a>
           </li>
           {% endfor %}

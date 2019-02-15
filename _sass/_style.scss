@@ -1,3 +1,14 @@
+/*
+
+Courier New CSS Font Stack
+*/
+
+body {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace !important;
+  font-style: normal;
+  font-variant: normal;
+}
+
 .landing-page .carousel-caption {
   h1, p {
     text-transform: uppercase;
@@ -156,7 +167,7 @@ h3, h4, h5 {
   background: #3385FF;
   color: #fff;
   &:hover {
-    background: #3385FF !important;
+    background: #3385FF;
     color: #fff;
   }
   span.label {
@@ -167,7 +178,7 @@ h3, h4, h5 {
 
 .navbar-fixed-top {
   transition-duration: .4s;
-  border-bottom: 1px solid #e7eaec !important;
+  border-bottom: 1px solid #e7eaec;
   z-index: 2030;
   background: #f3f3f4;
 }
@@ -319,24 +330,24 @@ body.canvas-menu .nav-header {
 }
 
 .menu-visible-lg, .menu-visible-md {
-  display: none !important;
+  display: none;
 }
 
 @media (min-width: 1200px) {
   .menu-visible-lg {
-    display: block !important;
+    display: block;
   }
 }
 
 @media (min-width: 992px) {
   .menu-visible-md {
-    display: block !important;
+    display: block;
   }
 }
 
 @media (max-width: 767px) {
   .menu-visible-lg, .menu-visible-md {
-    display: block !important;
+    display: block;
   }
 }
 
@@ -692,7 +703,7 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-weight: 600;
-    margin-bottom: 20px !important;
+    margin-bottom: 20px;
     &:active {
       top: 3px;
     }
@@ -751,7 +762,7 @@ button.dim:active:before {
 }
 
 .btn:focus {
-  outline: 0 !important;
+  outline: 0;
 }
 
 .label {
@@ -836,7 +847,7 @@ button.dim:active:before {
 }
 
 .inline {
-  display: inline-block !important;
+  display: inline-block;
 }
 
 .input-s-sm {
@@ -862,7 +873,7 @@ button.dim:active:before {
   transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;
   font-size: 14px;
   &:focus {
-    border-color: #3385FF !important;
+    border-color: #3385FF;
   }
 }
 
@@ -1214,7 +1225,7 @@ label.error {
 }
 
 .slick-next:before, .slick-prev:before {
-  color: #3385FF !important;
+  color: #3385FF;
 }
 
 body {
@@ -1242,7 +1253,7 @@ a {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #e7eaec !important;
+  border-bottom: 1px solid #e7eaec;
 }
 
 .font-bold {
@@ -1264,7 +1275,7 @@ a {
 #page-wrapper {
   padding: 0 15px;
   min-height: 568px;
-  position: relative !important;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -1297,7 +1308,7 @@ a {
 }
 
 .no-top-border {
-  border-top: 0 !important;
+  border-top: 0;
 }
 
 .border-left, .border-left-right, .border-right {
@@ -1326,7 +1337,7 @@ a {
 }
 
 .full-width {
-  width: 100% !important;
+  width: 100%;
 }
 
 .link-block {
@@ -1550,7 +1561,7 @@ a.close-canvas-menu {
 }
 
 .m-n {
-  margin: 0 !important;
+  margin: 0;
 }
 
 .m-t-none {
@@ -1642,7 +1653,7 @@ a.close-canvas-menu {
 }
 
 .block {
-  display: block !important;
+  display: block;
 }
 
 .search-form {
@@ -1680,7 +1691,7 @@ a.close-canvas-menu {
 }
 
 ul.clear-list:first-child {
-  border-top: none !important;
+  border-top: none;
 }
 
 .timeline-item {
@@ -2487,9 +2498,9 @@ body {
     padding: 20px 10px;
   }
   .navbar-fixed-top {
-    border: none !important;
+    border: none;
     &.navbar-scroll {
-      border-bottom: 1px solid #e7eaec !important;
+      border-bottom: 1px solid #e7eaec;
     }
   }
   .navbar.navbar-scroll .navbar-brand {
