@@ -7,7 +7,9 @@
 <a href="http://hits.dwyl.io/ro6ley/ro6ley.github.io"><img src="http://hits.dwyl.io/ro6ley/ro6ley.github.io.svg" alt="HitCount"></a>
 </p>
 
-# Personal Blog. 
+<center>
+  <h1>ro6ley.github.io</h1>
+</center>
 
 This is a simple, beautiful and swift personal blog built using [Jalpc Theme](https://github.com/jarrekk/Jalpc) for [Jekyll](http://jekyllrb.com). It's mobile first, fluidly responsive, and delightfully lightweight.
 
