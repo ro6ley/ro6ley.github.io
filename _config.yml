@@ -29,9 +29,9 @@ author:
   skill_icon2:
     - name: icon-nodejs 
     - name: fa-linux
-  desc: A software developer driven by passion, excellence and the belief that the future will be written in code.
-    I enjoy being challenged and engaging with projects and technologies that require me to work outside my comfort-zone
-    and knowledge set, as continuing to learn and overcome challenges fuel my growth.
+  desc:  I talk dirty to computers # A software developer driven by passion, excellence and the belief that the future will be written in code.
+    # I enjoy being challenged and engaging with projects and technologies that require me to work outside my comfort-zone
+    # and knowledge set, as continuing to learn and overcome challenges fuel my growth.
 
 # Comments feature using Disqus
 disqus:  # Shortname from Disqus settings page
