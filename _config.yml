@@ -14,7 +14,7 @@ author:
   name: Robley  # To appear on blog posts as the author.
   first_name: Robley  # To appear at index page about me section.
   last_name: Gori  # To appear at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpg  # To appear at index page about me section.
+  avatar: /static/assets/img/landing/avatar.jpeg  # To appear at index page about me section.
   github_username: ro6ley
   linkedin_id: robleygori
   facebook_username:
@@ -29,7 +29,7 @@ author:
   skill_icon2:
     - name: icon-nodejs 
     - name: fa-linux
-  desc:  I talk dirty to computers :D # A software developer driven by passion, excellence and the belief that the future will be written in code.
+  desc:  if i was in a band, i'd be the drummer. i talk dirty to computers for a living :D # A software developer driven by passion, excellence and the belief that the future will be written in code.
     # I enjoy being challenged and engaging with projects and technologies that require me to work outside my comfort-zone
     # and knowledge set, as continuing to learn and overcome challenges fuel my growth.
 
