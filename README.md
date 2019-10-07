@@ -5,6 +5,7 @@
 <a href="https://opensource.org/licenses/mit-license.php"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103)" alt="MIT License"></a>
 <a href="https://github.com/ellerbrock/open-source-badge/"><img src="https://badges.frapsoft.com/os/v1/open-source.png?v=103" alt="Open Source Love"></a>
 <a href="http://hits.dwyl.io/ro6ley/ro6ley.github.io"><img src="http://hits.dwyl.io/ro6ley/ro6ley.github.io.svg" alt="HitCount"></a>
+<a href="https://tokei.rs/b1/github/ro6ley/ro6ley.github.io?category=code"><img src="https://tokei.rs/b1/github/ro6ley/ro6ley.github.io?category=code" alt="LoC"></a>
 </p>
 
 <p align="center">
