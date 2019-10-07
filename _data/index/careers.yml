@@ -13,7 +13,7 @@
     i18n: may_2018
   job:
     detail: Software Engineer
-    i18n: software_developer
+    i18n: software_engineer
   icon: fa-laptop
 
 - name:
@@ -34,7 +34,7 @@
     i18n: june_2017
   job:
     detail: Software Engineer
-    i18n: software_developer
+    i18n: software_engineer
   icon: fa-laptop
 
 - name:
