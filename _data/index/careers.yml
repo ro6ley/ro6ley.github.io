@@ -4,9 +4,12 @@
     detail: Safaricom PLC
     i18n: safaricom_plc
   desc:
-    detail: Part of the team implementing microservices & containerisation at 
-            the organisation using technologies such as Docker, 
-            Kubernetes and Java Spring among others.
+    detail: I spearheaded the efforts that contributed to the design & implementation 
+            of microservices architecture geared towards achieving a mobile-first dream 
+            through mobile apps. This includes the Safaricom Home App that helped 100,000 
+            users(Google PlayStore downloads), manage their home internet subscriptions as 
+            well as subscribe to new offerings.
+
     i18n: company_a_desc
   date:
     detail: May. 2018
