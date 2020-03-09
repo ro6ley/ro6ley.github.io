@@ -2,7 +2,6 @@
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="about_me.about_me">Me?</span></h1>
             <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p> -->
         </div>
     </div>
@@ -21,6 +20,7 @@
         <div class="col-xs-4">
             <div class="team-member wow zoomIn">
                 <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+                <br>
                 <h4><span class="navy">{{ site.author.first_name }}</span> {{ site.author.last_name }}</h4>
                 <ul class="list-inline social-icon">
                     {% if site.author.github_username %}
@@ -62,13 +62,6 @@
                         </a>
                     </li>
                     {% endif %}
-
-                    <!-- temporarily remove feed from about section -->
-                    <!-- <li>
-                        <a href="{{ site.baseurl }}/feed.xml" target="blank">
-                            <i class="fa fa-rss"></i>
-                        </a>
-                    </li> -->
 
                     {% if site.author.cv %}
                     <li>
