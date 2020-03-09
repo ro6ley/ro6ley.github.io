@@ -18,9 +18,9 @@
   tpl: skills.html
   css: team
 
-- id: projects
-  i18n: nav.projects
-  name: Projects
+- id: links
+  i18n: nav.links
+  name: Links
   tpl: projects.html
   css: project
 
@@ -30,10 +30,11 @@
 #   tpl: github.html
   # css: project
 
-- id: links
-  i18n: nav.link
-  name: Links
+- id: blog
+  i18n: nav.blog
+  name: Blog
   tpl: links.html
+  page: blog/
   css: contact
 
 # - id: blog
