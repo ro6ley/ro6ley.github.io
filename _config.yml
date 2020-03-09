@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: Robley
+title: Robley Gori
 description: My personal blog using Jekyll and Github pages.
 keywords: Robley,Gori,Robley Gori,NaiRobley,ro6ley,github,gh-pages
 baseurl:  "" # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
@@ -18,7 +18,7 @@ author:
   github_username: ro6ley
   linkedin_id: robleygori
   facebook_username:
-  twitter_username: ro6ley 
+  twitter_username:
   email: robleyadrian@gmail.com 
   cv: /cv/ # Link to my CV
   # skill icons are on avatar's left and right side. 
@@ -49,8 +49,8 @@ go:
   # id:
 
 ## carousels
-index_carousel: on  # index page carousel switch
-blog_carousel: on  # blog page carousel switch
+index_carousel: off  # index page carousel switch
+blog_carousel: off  # blog page carousel switch
 
 # scss
 sass:
