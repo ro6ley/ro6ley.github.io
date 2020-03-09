@@ -12,12 +12,16 @@
 
     i18n: company_a_desc
   date:
+    start: April, 2018
+    end: July, 2019
+    duration: 1yr 3mos 
     detail: May. 2018
     i18n: may_2018
   job:
     detail: Software Engineer
     i18n: software_engineer
   icon: fa-laptop
+  link: https://www.safaricom.co.ke/
 
 - name:
     detail: Andela
@@ -33,12 +37,14 @@
             Learn more about us at https://andela.com.
     i18n: company_b_desc
   date:
-    detail: Jun. 2017
+    detail: June, 2017
+    start: June, 2017
     i18n: june_2017
   job:
     detail: Software Engineer
     i18n: software_engineer
   icon: fa-laptop
+  link: https://andela.com/
 
 - name:
     detail: The National Treasury
@@ -49,9 +55,13 @@
             assisted users resolve all their technological issues.
     i18n: company_a_desc
   date:
-    detail: May. 2016
+    detail: May, 2016
+    start: May, 2016
+    end: August, 2016
+    duration: 4mos
     i18n: may_2018
   job:
     detail: IT Intern
     i18n: it_intern
   icon: fa-laptop
+  link: https://www.treasury.go.ke/
