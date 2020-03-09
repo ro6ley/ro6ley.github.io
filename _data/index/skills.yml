@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Python, Javascript, DevOps, Git, Java, HTML5
-percentage: 85, 75, 60, 90, 80, 85
+aspects: Python, Javascript, DevOps, Git, Java
+percentage: 85, 75, 60, 90, 80
