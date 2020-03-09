@@ -1,8 +1,8 @@
 # links section data
-- last_name: Toa Sauti
+- last_name: My Blog
   first_name: 
-  desc: Toa Sauti Live
-  website: http://nairobley.pythonanywhere.com
-  email: robleyadrian@gmail.com
+  desc: My Blog
+  website: /blog
+  email:
 
 # more links
