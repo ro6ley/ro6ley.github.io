@@ -5,9 +5,17 @@
   i18n: toa_sauti
   gh_user: ro6ley
   repo: toasauti
-  url: http://nairobley.pythonanywhere.com
+  url: http://toasauit.robley.xyz
   img: /static/assets/img/landing/toasauti.png
   desc: A tool designed to enable the public to give valuable information to the authorities.
+
+- name: Indigo Platform (Contributor)
+  i18n: indigo
+  gh_user: laws-africa
+  repo: indigo
+  url: https://laws.africa/indigo/
+  img: https://laws.africa/img/indigo/indigo-logo.png
+  desc: Indigo Platform is a cloud-based editor that helps you import, consolidate and publish your legislation so that it's easier to read, work with and understand.
 
 - name: PyCon Web Scraping Talk
   i18n: pycon_web_scraping_talk
