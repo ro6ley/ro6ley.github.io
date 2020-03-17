@@ -8,8 +8,8 @@
 <a href="https://tokei.rs/b1/github/ro6ley/ro6ley.github.io?category=code"><img src="https://tokei.rs/b1/github/ro6ley/ro6ley.github.io?category=code" alt="LoC"></a>
 </p>
 
-<p align="center">
-  <h1>ro6ley.github.io</h1>
+<p>
+  <h1>robley.xyz</h1>
 </p>
 
 This is a simple, beautiful and swift personal blog built using [Jalpc Theme](https://github.com/jarrekk/Jalpc) for [Jekyll](http://jekyllrb.com). It's mobile first, fluidly responsive, and delightfully lightweight.
