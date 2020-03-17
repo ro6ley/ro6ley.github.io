@@ -1,16 +1,44 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
+    detail: Laws.Africa
+    i18n: laws.africa
+  desc:
+    detail: >
+      Reporting directly to the Head of Technology, I implemented new interface
+      designs, added new backend functionality, integrated new technologies and
+      fixed other issues on the Indigo platform that aims to improve access to
+      African law through the largest free and open access repository of African gazettes.
+    tech: Python, Django Framework, PostgreSQL, and Elasticsearch.
+    i18n: company_a_desc
+  country:
+    detail: South Africa
+  date:
+    start: August, 2019
+    end:
+    duration: 
+    detail: May. 2018
+    i18n: may_2018
+  job:
+    detail: Python Software Engineer
+    i18n: python_software_engineer
+  icon: fa-laptop
+  link: https://www.safaricom.co.ke/
+
+- name:
     detail: Safaricom PLC
     i18n: safaricom_plc
   desc:
-    detail: I spearheaded the efforts that contributed to the design & implementation 
-            of microservices architecture geared towards achieving a mobile-first dream 
-            through mobile apps. This includes the Safaricom Home App that helped 100,000 
-            users(Google PlayStore downloads), manage their home internet subscriptions as 
-            well as subscribe to new offerings.
-
+    detail: >
+      I spearheaded the efforts that contributed to the design & implementation 
+      of microservices architecture geared towards achieving a mobile-first dream 
+      through mobile apps. This includes the Safaricom Home App that helped 
+      100,000 users(Google PlayStore downloads), manage their home internet 
+      subscriptions as well as subscribe to new offerings.
+    tech: Java, Spring Framework, Docker, Kubernetes, Grafana, JMeter, Apache Kafka, and Jenkins.
     i18n: company_a_desc
+  country:
+    detail: Kenya
   date:
     start: April, 2018
     end: July, 2019
@@ -18,7 +46,7 @@
     detail: May. 2018
     i18n: may_2018
   job:
-    detail: Software Engineer
+    detail: Java & DevOps Engineer
     i18n: software_engineer
   icon: fa-laptop
   link: https://www.safaricom.co.ke/
@@ -27,18 +55,19 @@
     detail: Andela
     i18n: andela
   desc:
-    detail: Andela provides companies with access to the top 1% of global tech talent. 
-            We identify high-potential developers on the African continent, shape them into 
-            world-class technical leaders, and pair them with companies as full-time, distributed 
-            team members. This allows Andela's partners, which range from startups to Fortune 500s, 
-            to accelerate their product roadmaps while minimizing time spent interviewing, on-boarding, 
-            and training new hires. Andela is backed by investors including Spark Capital, Omidyar Network, 
-            Susa Ventures, Steve Case, Founder Collective, Rothenberg Ventures, Learn Capital and more. 
-            Learn more about us at https://andela.com.
+    detail: >
+      At Andela, I got to work on the open-source data management system called
+      CKAN by building out new features in the form of extensions. 
+      I also worked on internal tools as part of the technology team.
+    tech: Python, Django, Flask & Pylons Frameworks, React.js, Node.js, and PostgreSQL.
     i18n: company_b_desc
+  country:
+    detail: Kenya
   date:
     detail: June, 2017
     start: June, 2017
+    end: July, 2019
+    duration: 2yr 1mo
     i18n: june_2017
   job:
     detail: Software Engineer
@@ -54,6 +83,8 @@
             I was able to learn a lot about Information Technology as I 
             assisted users resolve all their technological issues.
     i18n: company_a_desc
+  country:
+    detail: Kenya
   date:
     detail: May, 2016
     start: May, 2016
