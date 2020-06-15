@@ -1,13 +1,13 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Toa Sauti
-  i18n: toa_sauti
+- name: Fleetz
+  i18n: fleetz
   gh_user: ro6ley
-  repo: toasauti
-  url: http://toasauit.robley.xyz
-  img: /static/assets/img/landing/toasauti.png
-  desc: A tool designed to enable the public to give valuable information to the authorities.
+  repo: fleetz
+  url: https://fleetz.robley.xyz
+  img: /static/assets/img/landing/fleetz.png
+  desc: Fleetz is a Twitter bot that makes tweets disappear after 24 hours(-ish) just like stories on other platforms.
 
 - name: Indigo Platform (Contributor)
   i18n: indigo
@@ -16,6 +16,14 @@
   url: https://laws.africa/indigo/
   img: https://laws.africa/img/indigo/indigo-logo.png
   desc: Indigo Platform is a cloud-based editor that helps you import, consolidate and publish your legislation so that it's easier to read, work with and understand.
+
+- name: Toa Sauti
+  i18n: toa_sauti
+  gh_user: ro6ley
+  repo: toasauti
+  url: http://toasauit.robley.xyz
+  img: /static/assets/img/landing/toasauti.png
+  desc: A tool designed to enable the public to give valuable information to the authorities.
 
 - name: PyCon Web Scraping Talk
   i18n: pycon_web_scraping_talk
