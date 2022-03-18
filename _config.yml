@@ -1,68 +1,49 @@
-# Welcome to Jekyll!
-
-# Website settings
+---
 title: Robley Gori
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 description: My personal blog using Jekyll and Github pages.
 keywords: Robley,Gori,Robley Gori,NaiRobley,ro6ley,github,gh-pages
-baseurl:  "" # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
-url: ""  # url should be 'http://<github_username>.github.io/homepage' as before
-# url: http://127.0.0.1:4000
-img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
-
-# author -- index page "about me" section
+baseurl: ''
+url: ''
+img_path: "/static/assets/img/blog"
 author:
-  name: Robley  # To appear on blog posts as the author.
-  first_name: Robley  # To appear at index page about me section.
-  last_name: Gori  # To appear at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpeg  # To appear at index page about me section.
+  name: Robley
+  first_name: Robley
+  last_name: Gori
+  avatar: "/static/assets/img/landing/avatar.jpeg"
   github_username: ro6ley
   linkedin_id: robleygori
-  facebook_username:
+  facebook_username: 
   twitter_username: ro6ley
   email: robleygori@live.com
-  cv:
-  # skill icons are on avatar's left and right side.
-  # Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+  cv: 
   skill_icon1:
-    - name: icon-shell
-    - name: icon-python
+  - name: icon-shell
+  - name: icon-python
   skill_icon2:
-    - name: icon-nodejs
-    - name: fa-linux
-  desc:  Sometimes I hunt for typos on restaurant menus, at other times I play drums for the band in my head. Mostly, I'm learning & building components for the internet.
-    # also, you should see the look on my face when i spot a typo on a restaurant menu :D
-    # A software developer driven by passion, excellence and the belief that the future will be written in code.
-    # I enjoy being challenged and engaging with projects and technologies that require me to work outside my comfort-zone
-    # and knowledge set, as continuing to learn and overcome challenges fuel my growth.
-
-# Comments feature using Disqus
-disqus:  # Shortname from Disqus settings page
+  - name: icon-nodejs
+  - name: fa-linux
+  desc: Sometimes I hunt for typos on restaurant menus, at other times I play drums
+    for the band in my head. Mostly, I'm learning & building components for the internet.
+disqus:
   name: personal-blog-smiptjl2az
-
-# analytics
-## Google Analytics
-ga:  # Config from https://www.google.com/analytics/
+ga:
   id: UA-131195725-1
-
-## google optimize
-go:
-  # id:
-
-## carousels
-index_carousel: off  # index page carousel switch
-blog_carousel: off  # blog page carousel switch
-
-# scss
+go: 
+index_carousel: false
+blog_carousel: false
 sass:
   style: compressed
-
-# Build settings
 encoding: utf-8
-
-# other settings
 highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-

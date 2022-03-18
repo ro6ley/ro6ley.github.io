@@ -1,8 +1,9 @@
 ---
+title: Markdown Guide.
+date: 2018-12-21 23:23:30 Z
+categories:
+- intro
 layout: post
-title:  "Markdown Guide."
-date:   2018-12-22 02:23:30 +0300
-categories: intro
 ---
 
 ## Welcome to GitHub Pages
