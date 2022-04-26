@@ -29,6 +29,20 @@ I use the following packages in the website to meet various needs:
 
 - [Chart.js](http://www.chartjs.org/) to show skills on a chart on the landing page.
 
+## Local Development
+
+Build:
+
+```
+$ bundle exec jekyll build
+```
+
+Serve:
+
+```
+$ bundle exec jekyll serve
+```
+
 ## Search engine
 
 I use javascript to implement blog search, you can double click `Ctrl` or click the icon at lower right corner of the page.
