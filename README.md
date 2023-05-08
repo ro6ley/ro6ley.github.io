@@ -1,10 +1,8 @@
 <p align="center"><img src="https://render.bitstrips.com/v2/cpanel/9e8f7839-cd6d-4222-82fe-4a31d013e2b1-56f796ea-082a-4ec4-8e56-447e791cb8a2-v1.png?transparent=1&palette=1&width=246" alt="ayyy"></p>
 
 <p align="center">
-<a href="https://github.com/ro6ley/ro6ley.github.io"><img src="https://ga-beacon.appspot.com/UA-131195725-1/welcome-page" alt="Analytics"></a>
 <a href="https://opensource.org/licenses/mit-license.php"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103)" alt="MIT License"></a>
 <a href="https://github.com/ellerbrock/open-source-badge/"><img src="https://badges.frapsoft.com/os/v1/open-source.png?v=103" alt="Open Source Love"></a>
-<a href="http://hits.dwyl.io/ro6ley/ro6ley.github.io"><img src="http://hits.dwyl.io/ro6ley/ro6ley.github.io.svg" alt="HitCount"></a>
 <a href="https://tokei.rs/b1/github/ro6ley/ro6ley.github.io?category=code"><img src="https://tokei.rs/b1/github/ro6ley/ro6ley.github.io?category=code" alt="LoC"></a>
 </p>
 
