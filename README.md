@@ -9,7 +9,7 @@
 </p>
 
 <p>
-  <h1>robley.xyz</h1>
+  <h1>robley.dev</h1>
 </p>
 
 This is a simple, beautiful and swift personal blog built using [Jalpc Theme](https://github.com/jarrekk/Jalpc) for [Jekyll](http://jekyllrb.com). It's mobile first, fluidly responsive, and delightfully lightweight.
