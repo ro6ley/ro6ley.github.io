@@ -42,7 +42,7 @@ disqus:  # Shortname from Disqus settings page
 # analytics
 ## Google Analytics
 ga:  # Config from https://www.google.com/analytics/
-  id: UA-131195725-1
+  id: G-47SLJ9NHXX
 
 ## google optimize
 go:
