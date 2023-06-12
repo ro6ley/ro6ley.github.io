@@ -1,14 +1,44 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
+    detail: Angaza
+    i18n: Angaza
+  desc:
+    detail: >
+      I built and maintained integrations with mobile networks in multiple markets 
+      to facilitate payment collections and communication between small merchants 
+      and their clients.
+      I worked with project managers, developers, quality assurance and customers
+      to resolve technical issues to enable smooth flow of payments. 
+
+    tech: Python, Flask, PostgreSQL, React.js, and AWS.
+    i18n: company_a_desc
+  country:
+    detail: Kenya
+  date:
+    start: December, 2022
+    end: Present
+    duration: 6 months
+    detail: December, 2022
+    i18n: december_2022
+  job:
+    detail: Software Engineer
+    i18n: software_engineer
+  icon: fa-laptop
+  link: https://www.angaza.com/
+
+- name:
     detail: Laws.Africa
     i18n: laws.africa
   desc:
     detail: >
-      Reporting directly to the Head of Technology, I implemented new interface
-      designs, added new backend functionality, integrated new technologies and
-      fixed other issues on the Indigo platform that aims to improve access to
-      African law through the largest free and open access repository of African gazettes.
+      I built a caselaw management system for the National Council for Law Reporting in Kenya 
+      enabling them to process and publish thouusands of court cases weekly as part of their mandate.
+      I contributed to the Indigo platform that aims to improve access to African law through 
+      the most extensive free and open access repository of African gazettes by implementing 
+      new interface designs, adding new backend functionality and integrating new technologies. 
+      Indigo is used in several countries across Africa to publish legislation online including 
+      Kenya, Namibia, South Africa and Zimbabwe.
     tech: Python, Django Framework, PostgreSQL, and Elasticsearch.
     i18n: company_a_desc
   country:
