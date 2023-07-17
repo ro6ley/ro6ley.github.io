@@ -5,12 +5,13 @@
     i18n: Angaza
   desc:
     detail: >
-      I built and maintained integrations with mobile networks in multiple markets 
-      to facilitate payment collections and communication between small merchants 
-      and their clients.
-      I worked with project managers, developers, quality assurance and customers
-      to resolve technical issues to enable smooth flow of payments. 
+      Developed and maintained integrations with mobile networks across multiple
+      markets, enabling seamless payment collections and communication between 
+      small merchants and clients.
 
+
+      Collaborated with project managers, developers, quality assurance, and 
+      customers to resolve technical issues and ensure smooth payment processing.
     tech: Python, Flask, PostgreSQL, React.js, and AWS.
     i18n: company_a_desc
   country:
@@ -18,7 +19,7 @@
   date:
     start: December, 2022
     end: Present
-    duration: 6 months
+    duration: 8 months
     detail: December, 2022
     i18n: december_2022
   job:
@@ -32,13 +33,15 @@
     i18n: laws.africa
   desc:
     detail: >
-      I built a caselaw management system for the National Council for Law Reporting in Kenya 
-      enabling them to process and publish thouusands of court cases weekly as part of their mandate.
-      I contributed to the Indigo platform that aims to improve access to African law through 
-      the most extensive free and open access repository of African gazettes by implementing 
-      new interface designs, adding new backend functionality and integrating new technologies. 
-      Indigo is used in several countries across Africa to publish legislation online including 
-      Kenya, Namibia, South Africa and Zimbabwe.
+      Contributed to the Indigo platform, enhancing access to African law by 
+      implementing new interface designs, backend functionality, and integrating
+      new technologies. Indigo is used in several countries across Africa to
+      publish legislation online including Kenya, Namibia, South Africa and Zimbabwe.
+
+
+      Built a caselaw management system for the National Council for Law Reporting 
+      in Kenya, enabling efficient processing and publication of court cases as
+      part of their mandate.
     tech: Python, Django Framework, PostgreSQL, and Elasticsearch.
     i18n: company_a_desc
   country:
@@ -60,11 +63,15 @@
     i18n: safaricom_plc
   desc:
     detail: >
-      I spearheaded the efforts that contributed to the design & implementation 
-      of microservices architecture geared towards achieving a mobile-first dream 
-      through mobile apps. This includes the Safaricom Home App that helped 
-      100,000 users(Google PlayStore downloads), manage their home internet 
-      subscriptions as well as subscribe to new offerings.
+      Spearheaded efforts to design and implement a mobile-first microservices 
+      architecture, resulting in the MySafaricom App that helped over 5 million
+      users manage their subscriptions and access new offerings.
+
+
+      Through my contributions, we were able to deliver seamless experiences to
+      our user base, enabling them to effortlessly engage with our services on
+      their mobile devices resulting in enhanced customer satisfaction and
+      improved time to market for our products and services.
     tech: Java, Spring Framework, Docker, Kubernetes, Grafana, JMeter, Apache Kafka, and Jenkins.
     i18n: company_a_desc
   country:
@@ -86,9 +93,12 @@
     i18n: andela
   desc:
     detail: >
-      At Andela, I got to work on the open-source data management system called
-      CKAN by building out new features in the form of extensions. 
-      I also worked on internal tools as part of the technology team.
+      Developed new features and extensions for CKAN, an open-source data
+      management system.
+
+
+      Contributed to the development of internal tools as part of the technology
+      team.
     tech: Python, Django, Flask & Pylons Frameworks, React.js, Node.js, and PostgreSQL.
     i18n: company_b_desc
   country:

@@ -21,7 +21,7 @@
   gh_user: ro6ley
   repo: toasauti
   img: /static/assets/img/landing/toasauti.png
-  desc: A tool designed to enable the public to give valuable information to the authorities.
+  desc: A platform enabling the public to provide valuable information to the authorities to enhance crime prevention efforts.
 
 - name: PyCon Web Scraping Talk
   i18n: pycon_web_scraping_talk
@@ -35,7 +35,7 @@
   gh_user: ro6ley
   repo: midget
   img: /static/assets/img/landing/midget.png
-  desc: This is a url shortening application built using Python (Django), Redis and JavaScript (VueJS + VueX).
+  desc: Midget is a fast and minimalistic URL-shortening platform built using Python (Django), Redis and JavaScript (VueJS + VueX).
 
 - name: Indigo Platform (Contributor)
   i18n: indigo

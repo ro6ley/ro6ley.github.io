@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="career.my_career">Work History</span></h1>
+            <h1><span data-i18n="career.my_career">Career</span></h1>
         </div>
     </div>
     <div class="row features-block">
@@ -17,7 +17,7 @@
                     <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
                         <h2><span data-i18n="career.{{ career.name.i18n }}"><b>{{ career.name.detail }}</b> - {{ career.country.detail  }}</span></h2>
                         <p>
-                            <span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail }} </span>
+                            <span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail | newline_to_br }} </span>
 
                             <br>
                             {% if career.desc.tech %}
